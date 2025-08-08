@@ -85,7 +85,7 @@ function App() {
 
         {/* Admin-only route */}
         <Route path="/users" element={
-          <RoleProtectedRoute allowedRoles={['admin']}>
+          <RoleProtectedRoute allowedRoles={[ 'super_admin' , 'admin']}>
             <UserPage />
           </RoleProtectedRoute> 
         } />
